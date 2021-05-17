@@ -30,25 +30,21 @@ requirements:
     - netcdf4
     - matplotlib-base
     - seaborn
-    - lxml
     - networkx >=2.0
     - dask
     - distributed
-    - progressbar2
     - tqdm
     - dask-jobqueue
     - dicttoxml
     - fire
     - joblib
     - mdtraj
-    - pymbar
+    - pymbar ==3.0.3
     - ambertools >=19.11
     - openmm >=7.4.2
     - openmmforcefields
     - openmoltools >=0.8.4
     - openmmtools >=0.20.0
-    - yank
-    - pdbfixer
     # - openeye-toolkits
 
 test:
