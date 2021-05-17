@@ -34,6 +34,9 @@ requirements:
     - dask
     - distributed
     - tqdm
+    - pyyaml
+    - pandas
+    - pymol-open-source
     - dask-jobqueue
     - dicttoxml
     - fire
