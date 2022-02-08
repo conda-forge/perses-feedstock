@@ -43,7 +43,7 @@ requirements:
     - mdtraj
     - pymbar >=3.0.6,<4
     - ambertools >=19.11
-    - openmm =7.6
+    - openmm >=7.6
     - openmmforcefields
     - openmoltools >=0.8.4
     - openmmtools >=0.20.0
