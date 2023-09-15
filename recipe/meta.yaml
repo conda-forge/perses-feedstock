@@ -1,5 +1,5 @@
 {% set name = "perses" %}
-{% set version = "0.10.2" %}
+{% set version = "0.10.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/choderalab/perses/archive/{{ version }}.tar.gz
-  sha256: d5ba78a815bb3d414e7eb2895eee3f8f6953098961081fa5a66db9ddd6f3d075
+  sha256: a0ee50148f190adc5d01ea84cf37aa1e40dd34dfaabac36865f0b26c43b979d2
 
 build:
   noarch: python
@@ -24,7 +24,6 @@ requirements:
     - python >=3.6
   run:
     - ambertools >=19.11
-    - arsenic
     - click
     - cloudpathlib-all
     - dask
@@ -46,22 +45,17 @@ requirements:
     - openmmtools >=0.23.0
     - openmoltools >=0.8.4
     - pandas
-    - pymbar >=3.0.6,<4
+    - pymbar >=3.0.6,<4.0a0
     - python >=3.6
     - pyyaml
     - rich
     - scipy
     - seaborn
     - tqdm
-    # - openeye-toolkits
 
 test:
   imports:
     - perses
-  # commands:
-    # # these require openeye toolkits
-    # - perses-relative --help
-    # - perses-fah --help
 
 about:
   home: https://github.com/choderalab/perses
