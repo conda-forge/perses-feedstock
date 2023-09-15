@@ -53,15 +53,10 @@ requirements:
     - scipy
     - seaborn
     - tqdm
-    # - openeye-toolkits
 
 test:
   imports:
     - perses
-  # commands:
-    # # these require openeye toolkits
-    # - perses-relative --help
-    # - perses-fah --help
 
 about:
   home: https://github.com/choderalab/perses
