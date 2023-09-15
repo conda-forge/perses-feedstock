@@ -24,7 +24,6 @@ requirements:
     - python >=3.6
   run:
     - ambertools >=19.11
-    - arsenic
     - click
     - cloudpathlib-all
     - dask
