@@ -46,7 +46,7 @@ requirements:
     - openmmtools >=0.23.0
     - openmoltools >=0.8.4
     - pandas
-    - pymbar >=3.0.6,<4
+    - pymbar >=3.0.6,<4.0a0
     - python >=3.6
     - pyyaml
     - rich
