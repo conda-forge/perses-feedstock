@@ -11,7 +11,7 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv --no-deps
   entry_points:
     - perses-relative = perses.app.setup_relative_calculation:run
@@ -21,7 +21,7 @@ requirements:
   host:
     - numpy
     - pip
-    - python >=3.6
+    - python {{ python_min }}
   run:
     - ambertools >=19.11
     - click
@@ -46,7 +46,7 @@ requirements:
     - openmoltools >=0.8.4
     - pandas
     - pymbar >=3.0.6,<4.0a0
-    - python >=3.6
+    - python >={{ python_min }}
     - pyyaml
     - rich
     - scipy
@@ -54,6 +54,8 @@ requirements:
     - tqdm
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - perses
 
