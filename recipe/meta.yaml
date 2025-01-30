@@ -21,7 +21,8 @@ requirements:
   host:
     - numpy
     - pip
-    - python >=3.6
+    - python {{ python_min }}
+    - setuptools
   run:
     - ambertools >=19.11
     - click
@@ -46,7 +47,7 @@ requirements:
     - openmoltools >=0.8.4
     - pandas
     - pymbar
-    - python >=3.6
+    - python >={{ python_min }}
     - pyyaml
     - rich
     - scipy
