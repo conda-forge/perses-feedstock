@@ -11,7 +11,7 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv --no-deps
   entry_points:
     - perses-relative = perses.app.setup_relative_calculation:run
@@ -45,7 +45,7 @@ requirements:
     - openmmtools >=0.23.0
     - openmoltools >=0.8.4
     - pandas
-    - pymbar >=3.0.6,<4.0a0
+    - pymbar
     - python >=3.6
     - pyyaml
     - rich
